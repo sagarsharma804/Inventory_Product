@@ -1,0 +1,6 @@
+ALTER TABLE [TeamC].[ProductsOrder]  WITH CHECK ADD  CONSTRAINT [FK_ProductsOrder_ProductID] FOREIGN KEY([ProductID])
+REFERENCES [TeamC].[ProductsInventory] ([ProductID])
+GO
+
+ALTER TABLE [TeamC].[ProductsOrder] CHECK CONSTRAINT [FK_ProductsOrder_ProductID]
+GO
